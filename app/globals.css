@@ -5,3 +5,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {
+    transition: all 0.2s ease-in;
+}
+
+.header__scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+}
+
+.register {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.swiper-wrapper {
+    padding: 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    --swiper-navigation-size: 30px;
+}

@@ -1,7 +1,14 @@
-export default function Home() {
+import ProductCard from "@/components/Cards/ProductCard";
+import EmblaCarousel from "@/components/EmblaCarousel";
+import Home from "@/components/Home";
+import LoginPopup from "@/components/UI/LoginPopup";
+import { LoginContext } from "@/context/loginContext";
+import { useContext } from "react";
+
+export default function HomePage() {
     return (
-        <main className="flex flex-col min-h-screen items-center justify-between">
-            Home
-        </main>
+        <>
+            <Home />
+        </>
     );
 }
