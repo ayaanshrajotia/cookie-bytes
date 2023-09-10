@@ -5,9 +5,18 @@ import { createContext, useState } from "react";
 export const LoginContext = createContext(false);
 
 export const ContextProvider = ({ children }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isLoginOpen, setIsLoginOpen] = useState(false);
+    const [isFilterOpen, setIsFilterOpen] = useState(false);
+
     return (
-        <LoginContext.Provider value={{ isOpen, setIsOpen }}>
+        <LoginContext.Provider
+            value={{
+                isLoginOpen,
+                setIsLoginOpen,
+                isFilterOpen,
+                setIsFilterOpen,
+            }}
+        >
             {children}
         </LoginContext.Provider>
     );
