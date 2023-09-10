@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Header = () => {
     const [show, handleShow] = useState(false);
-    const { isOpen, setIsOpen } = useContext(LoginContext);
+    const { isLoginOpen, setIsLoginOpen } = useContext(LoginContext);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -34,7 +34,7 @@ const Header = () => {
         <nav
             className={`header fixed top-0 left-0 right-0  ${
                 show ? "header__scrolled" : "bg-gray-100"
-            }  z-[100]`}
+            }  z-[99]`}
         >
             <div className="flex items-center justify-between p-4 md:max-w-[85vw] mx-auto h-[80px]">
                 <div className="flex items-center">
@@ -46,34 +46,38 @@ const Header = () => {
                             className="absolute w-full h-full"
                         />
                     </div> */}
-                    <img src="/images/logo.png" alt="" className="w-14" />
-                    <Link
-                        href="/"
-                        className={`font-bold font-raleway text-2xl -ml-2 mr-8 ${
-                            show && "text-white"
-                        }`}
-                    >
-                        AgriConnect
-                    </Link>
+                    <div className="flex items-center">
+                        <img src="/images/logo.png" alt="" className="w-14" />
+                        <Link
+                            href="/"
+                            className={`font-bold font-raleway text-2xl -ml-2 mr-8 ${
+                                show && "text-white"
+                            }`}
+                        >
+                            AgriConnect
+                        </Link>
+                    </div>
                     <div className=" w-full md:block md:w-auto">
                         <ul className="flex flex-col p-4 font-poppins md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:gap-6 md:mt-0 md:border-0 md:bg-transparent md:text-base ">
                             <li
-                                className={`block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:text-zinc-700 md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
-                                    show && "text-white"
+                                className={`link block py-2 pl-3 pr-4 hover:bg-gray-100  md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
+                                    show && "text-white before:bg-white"
                                 }`}
                             >
-                                <Link href={"/"}>Home</Link>
+                                <Link href={"/"} className="cursor-pointer">
+                                    Home
+                                </Link>
                             </li>
                             <li
-                                className={`block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:text-zinc-700 md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
-                                    show && "text-white"
+                                className={` link py-2 pl-3 pr-4 hover:bg-gray-100  md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
+                                    show && "text-white before:bg-white"
                                 }`}
                             >
                                 <Link href={"/products"}>Products</Link>
                             </li>
                             <li
-                                className={`block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:text-zinc-700 md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
-                                    show && "text-white"
+                                className={`link block py-2 pl-3 pr-4 hover:bg-gray-100  md:hover:bg-transparent bg-blue-700 rounded md:bg-transparent md:p-0 cursor-pointer ${
+                                    show && "text-white before:bg-white"
                                 }`}
                             >
                                 <Link href={"/aboutus"}>About Us</Link>
@@ -87,7 +91,7 @@ const Header = () => {
                         <li className="block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 cursor-pointer">
                             <UserCircle2
                                 className={`text-lg ${show && "text-white"}`}
-                                onClick={() => setIsOpen((prev) => !prev)}
+                                onClick={() => setIsLoginOpen((prev) => !prev)}
                             />
                         </li>
                         <li className="block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 cursor-pointer">
