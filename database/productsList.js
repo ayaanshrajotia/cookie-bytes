@@ -8,7 +8,7 @@ const insecticides = [
         productId: "#439",
         sellCount: "64",
         licence: 296315,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides1.png",
+        image:"/images/Insecticides/insecticides1.png"
     },
     {
         id:"2",
@@ -19,7 +19,7 @@ const insecticides = [
         productId: "#908",
         sellCount: "400",
         licence: 784532,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides2.png",
+        image:"/images/Insecticides/insecticides2.png"
     },
     {
         id:"3",
@@ -30,7 +30,7 @@ const insecticides = [
         productId: "#234",
         sellCount: "70",
         licence: 298484,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides3.png",
+        image:"/images/Insecticides/insecticides3.png"
     },
     {
         id:"4",
@@ -41,7 +41,7 @@ const insecticides = [
         productId: "#373",
         sellCount: "22",
         licence: 752577,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides4.png",
+        image:"/images/Insecticides/insecticides4.png"
     },
     {
         id:"5",
@@ -52,7 +52,7 @@ const insecticides = [
         productId: "#731",
         sellCount: "25",
         licence: 642689,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides5.png",
+        image:"/images/Insecticides/insecticides5.png"
     },
     {
         id:"6",
@@ -63,7 +63,7 @@ const insecticides = [
         productId: "#231",
         sellCount: "54",
         licence: 746766,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides6.png",
+        image:"/images/Insecticides/insecticides6.png"
     },
     {
         id:"7",
@@ -74,7 +74,7 @@ const insecticides = [
         productId: "#333",
         sellCount: "40",
         licence: 778456,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides7.png",
+        image:"/images/Insecticides/insecticides7.png",
     },
     {
         id:"8",
@@ -85,7 +85,7 @@ const insecticides = [
         productId: "#526",
         sellCount: "20",
         licence: 642516,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Insecticides/insecticides8.png",
+        image:"/images/Insecticides/insecticides8.png",
     }
 ]
 const fungicides=[
@@ -98,7 +98,7 @@ const fungicides=[
         productId: "#582",
         sellCount: "66",
         licence: 734509,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides1.png"
+        image:"/images/Fungicides/fungicides1.png"
     },
     {
         id:"12",
@@ -109,7 +109,7 @@ const fungicides=[
         productId: "#346",
         sellCount: "67",
         licence: 458636,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides2.png"
+        image:"/images/Fungicides/fungicides2.png"
     },
     {
         id:"13",
@@ -120,7 +120,7 @@ const fungicides=[
         productId: "#547",
         sellCount: "87",
         licence: 634587,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides3.png"
+        image:"/images/Fungicides/fungicides3.png"
     },
     {
         id:"14",
@@ -131,7 +131,7 @@ const fungicides=[
         productId: "#345",
         sellCount: "34",
         licence: 754676,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides4.png"
+        image:"/images/Fungicides/fungicides4.png"
     },
     {
         id:"15",
@@ -142,7 +142,7 @@ const fungicides=[
         productId: "#238",
         sellCount: "87",
         licence: 342312,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides5.png"
+        image:"/images/Fungicides/fungicides5.png"
     },
     {
         id:"16",
@@ -153,7 +153,7 @@ const fungicides=[
         productId: "#545",
         sellCount: "90",
         licence: 398758,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides6.png"
+        image:"/images/Fungicides/fungicides6.png"
     },
     {
         id:"17",
@@ -164,7 +164,7 @@ const fungicides=[
         productId: "#375",
         sellCount: "56",
         licence: 956897,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides7.png"
+        image:"/images/Fungicides/fungicides7.png"
     },
     {
         id:"18",
@@ -175,7 +175,7 @@ const fungicides=[
         productId: "#988",
         sellCount: "45",
         licence: 876856,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides8.png"
+        image:"/images/Fungicides/fungicides8.png"
     },
     {
         id:"19",
@@ -186,7 +186,7 @@ const fungicides=[
         productId: "#436",
         sellCount: "87",
         licence: 876567,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides9.png"
+        image:"/images/Fungicides/fungicides9.png"
     },
     {
         id:"20",
@@ -197,7 +197,7 @@ const fungicides=[
         productId: "#765",
         sellCount: "48",
         licence: 653755,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fungicides/fungicides10.png"
+        image:"/images/Fungicides/fungicides10.png"
     },
 ]
 const hybridSeeds=[
@@ -210,7 +210,7 @@ const hybridSeeds=[
         productId: "#643",
         sellCount: "98",
         licence: 298765,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed1.png"
+        image:"/images/HybridSeeds/seed1.png"
     },
     {
         id:"22",
@@ -221,7 +221,7 @@ const hybridSeeds=[
         productId: "#989",
         sellCount: "67",
         licence: 145375,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed2.png"
+        image:"/images/HybridSeeds/seed2.png"
     },
     {
         id:"23",
@@ -232,7 +232,7 @@ const hybridSeeds=[
         productId: "13998",
         sellCount: "52",
         licence: 615478,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed3.png"
+        image:"/images/HybridSeeds/seed3.png"
     },
     {
         id:"24",
@@ -243,7 +243,7 @@ const hybridSeeds=[
         productId: "#398",
         sellCount: "12",
         licence: 186432,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed4.png"
+        image:"/images/HybridSeeds/seed4.png"
     },
     {
         id:"25",
@@ -254,7 +254,7 @@ const hybridSeeds=[
         productId: "#902",
         sellCount: "31",
         licence: 418557,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed5.png"
+        image:"/images/HybridSeeds/seed5.png"
     },
     {
         id:"26",
@@ -265,7 +265,7 @@ const hybridSeeds=[
         productId: "#122",
         sellCount: "88",
         licence: 309876,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed6.png"
+        image:"/images/HybridSeeds/seed6.png"
     },
     {
         id:"27",
@@ -276,7 +276,7 @@ const hybridSeeds=[
         productId: "#610",
         sellCount: "90",
         licence: 618408,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed7.png"
+        image:"/images/HybridSeeds/seed7.png"
     },
     {
         id:"28",
@@ -287,7 +287,7 @@ const hybridSeeds=[
         productId: "#310",
         sellCount: "35",
         licence: 106437,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed8.png"
+        image:"/images/HybridSeeds/seed8.png"
     },
     {
         id:"29",
@@ -298,7 +298,7 @@ const hybridSeeds=[
         productId: "#111",
         sellCount: "44",
         licence: 233459,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed9.png"
+        image:"/images/HybridSeeds/seed9.png"
     },
     {
         id:"30",
@@ -309,7 +309,7 @@ const hybridSeeds=[
         productId: "#112",
         sellCount: "65",
         licence: 776578,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Hybrid Seeds/seed9.png"
+        image:"/images/HybridSeeds/seed9.png"
     },
 ]
 const pgr=[
@@ -322,7 +322,7 @@ const pgr=[
         productId: "#191",
         sellCount: "50",
         licence: 906137,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Plant Growth Regulator/pgr1.png"
+        image:"/images/PGR/pgr1.png"
     },
     {
         id:"32",
@@ -333,7 +333,7 @@ const pgr=[
         productId: "#910",
         sellCount: "61",
         licence: 101345,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Plant Growth Regulator/pgr2.png"
+        image:"/images/PGR/pgr2.png"
     },
     {
         id:"33",
@@ -344,7 +344,7 @@ const pgr=[
         productId: "#933",
         sellCount: "84",
         licence: 908092,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Plant Growth Regulator/pgr3.png"
+        image:"/images/PGR/pgr3.png"
     },
     {
         id:"34",
@@ -355,7 +355,7 @@ const pgr=[
         productId: "#230",
         sellCount: "86",
         licence: 456754,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Plant Growth Regulator/pgr4.png"
+        image:"/images/PGR/pgr4.png"
     },
     {
         id:"35",
@@ -366,7 +366,7 @@ const pgr=[
         productId: "#438",
         sellCount: "94",
         licence: 437376,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Plant Growth Regulator/pgr5.png"
+        image:"/images/PGR/pgr5.png"
     },
 ]
 const fertilizers=[
@@ -379,7 +379,7 @@ const fertilizers=[
         productId: "474",
         sellCount: "46",
         licence: 964767,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fertilizers/fertilizer1.png"
+        image:"/images/Fertilizers/fertilizer1.png"
     },
     {
         id:"37",
@@ -390,7 +390,7 @@ const fertilizers=[
         productId: "#948",
         sellCount: "69",
         licence: 974786,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fertilizers/fertilizer2.png"
+        image:"/images/Fertilizers/fertilizer2.png"
     },
     {
         id:"38",
@@ -401,7 +401,7 @@ const fertilizers=[
         productId: "937",
         sellCount: "38",
         licence: 957966,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fertilizers/fertilizer3.png"
+        image:"/images/Fertilizers/fertilizer3.png"
     },
     {
         id:"39",
@@ -412,7 +412,7 @@ const fertilizers=[
         productId: "#584",
         sellCount: "98",
         licence: 526878,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fertilizers/fertilizer4.png"
+        image:"/images/Fertilizers/fertilizer4.png"
     },
     {
         id:"40",
@@ -423,7 +423,7 @@ const fertilizers=[
         productId: "#564",
         sellCount: "46",
         licence: 676489,
-        image:"C:/VS Code/Front End Dev/Media/ProjectImages/Fertilizers/fertilizer5.png"
+        image:"/images/Fertilizers/fertilizer5.png"
     },
 ]
 const herbicides=[
@@ -436,6 +436,7 @@ const herbicides=[
         productId: "#445",
         sellCount: "100",
         licence: 634590,
+        image:"/images/Herbicides/herbicide1.png"
     },
     {
         id:"42",
@@ -446,6 +447,7 @@ const herbicides=[
         productId: "#456",
         sellCount: "30",
         licence: 986134,
+        image:"/images/Herbicides/herbicide2.png"
     },
     {
         id:"43",
@@ -456,6 +458,7 @@ const herbicides=[
         productId: "#810",
         sellCount: "68",
         licence: 379145,
+        image:"/images/Herbicides/herbicide3.png"
     },
     {
         id:"44",
@@ -466,6 +469,7 @@ const herbicides=[
         productId: "#456",
         sellCount: "77",
         licence: 745098,
+        image:"/images/Herbicides/herbicide4.png"
     },
     {
         id:"45",
@@ -476,6 +480,7 @@ const herbicides=[
         productId: "#755",
         sellCount: "200",
         licence: 671567,
+        image:"/images/Herbicides/herbicide5.png"
     },
     {
         id:"9",
@@ -486,5 +491,6 @@ const herbicides=[
         productId: "#625",
         sellCount: "100",
         licence: 329078,
+        image:"/images/Herbicides/herbicide1.png"
     },
 ];
