@@ -1,13 +1,13 @@
 import { Star } from "lucide-react";
 import React from "react";
 
-const ProductCard = () => {
+const HomeProductCard = () => {
     return (
         <div class="product-card  w-[16rem] bg-white rounded-lg border-[1px] border-gray-100 m-4">
             <div className="flex items-center justify-center">
                 <img
                     className="p-4 rounded-t-lg cover h-[12rem]"
-                    src={image}
+                    src="https://cdn11.bigcommerce.com/s-o7ajfrug9g/images/stencil/1280x1280/products/301/444/greenup__81850.1654621566.png?c=1"
                     alt="product image"
                 />
             </div>
@@ -56,4 +56,4 @@ const ProductCard = () => {
     );
 };
 
-export default ProductCard;
+export default HomeProductCard;
