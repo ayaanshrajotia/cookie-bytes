@@ -2,14 +2,14 @@
 
 import { createContext, useState } from "react";
 
-export const LoginContext = createContext(false);
+export const PopupContext = createContext(false);
 
 export const ContextProvider = ({ children }) => {
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
     return (
-        <LoginContext.Provider
+        <PopupContext.Provider
             value={{
                 isLoginOpen,
                 setIsLoginOpen,
@@ -18,6 +18,6 @@ export const ContextProvider = ({ children }) => {
             }}
         >
             {children}
-        </LoginContext.Provider>
+        </PopupContext.Provider>
     );
 };

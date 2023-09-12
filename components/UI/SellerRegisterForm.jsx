@@ -3,16 +3,16 @@
 import { getCountries, getStates } from "country-state-picker";
 import React, { useState } from "react";
 
-const RegisterForm = () => {
+const SellerRegisterForm = () => {
     const [countrycode, setCountrycode] = useState("country");
 
     const countries = getCountries();
     const states = getStates(countrycode);
 
     return (
-        <div className="register bg-white max-w-[75vw] mx-auto rounded-md p-6 py-8 w-full font-poppins">
+        <div className="register bg-white max-w-[75vw] mx-auto rounded-md p-6 py-8 w-full font-poppins mb-16 mt-10">
             <h1 className="text-4xl font-poppins font-bold mb-4 text-center">
-                Create an account
+                Create a Seller account
             </h1>
             <h2 className="text-3xl font-poppins font-semibold mb-6">
                 User info
@@ -50,27 +50,6 @@ const RegisterForm = () => {
                         required
                     />
                 </div>
-                {/* Adhaar Number */}
-                <div className="mb-4">
-                    <label
-                        htmlFor="adhaar-number"
-                        className="block mb-2 text-sm font-medium text-gray-900"
-                    >
-                        Adhaar Number
-                    </label>
-                    <div className="flex gap-4">
-                        <input
-                            type="text"
-                            id="adhaar-number"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder=""
-                            required
-                        />
-                        <button className="w-fit flex items-center justify-center font-medium font-poppins bg-orange-500 text-white p-2.5 px-4 rounded-md">
-                            Verify
-                        </button>
-                    </div>
-                </div>
                 {/* Password */}
                 <div className="mb-4">
                     <label
@@ -103,6 +82,112 @@ const RegisterForm = () => {
                         required
                     />
                 </div>
+                <h2 className="text-3xl font-poppins font-semibold my-6">
+                    Basic info
+                </h2>
+                {/* Shop Name */}
+                <div className="mb-4">
+                    <label
+                        htmlFor="shop-name"
+                        className="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                        Shop / Company Name
+                    </label>
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            id="shop-name"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                    </div>
+                </div>
+                {/* Adhaar Number */}
+                <div className="mb-4">
+                    <label
+                        htmlFor="adhaar-number"
+                        className="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                        Adhaar Number
+                    </label>
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            id="adhaar-number"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                        <button className="w-fit flex items-center justify-center font-medium font-poppins bg-orange-500 text-white p-2.5 px-4 rounded-md">
+                            Verify
+                        </button>
+                    </div>
+                </div>
+                {/* License Number */}
+                <div className="mb-4">
+                    <label
+                        htmlFor="license-number"
+                        className="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                        License Number
+                    </label>
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            id="license-number"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                        <button className="w-fit flex items-center justify-center font-medium font-poppins bg-orange-500 text-white p-2.5 px-4 rounded-md">
+                            Verify
+                        </button>
+                    </div>
+                </div>
+                {/* Certification Number */}
+                <div className="mb-4">
+                    <label
+                        htmlFor="certification-number"
+                        className="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                        Certification Number
+                    </label>
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            id="certification-number"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                        <button className="w-fit flex items-center justify-center font-medium font-poppins bg-orange-500 text-white p-2.5 px-4 rounded-md">
+                            Verify
+                        </button>
+                    </div>
+                </div>
+                {/* GST Number */}
+                <div className="mb-4">
+                    <label
+                        htmlFor="gst-number"
+                        className="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                        GST Number
+                    </label>
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            id="gst -number"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                        <button className="w-fit flex items-center justify-center font-medium font-poppins bg-orange-500 text-white p-2.5 px-4 rounded-md">
+                            Verify
+                        </button>
+                    </div>
+                </div>
+
                 {/* Address */}
                 <div className="mb-4">
                     <label
@@ -119,7 +204,7 @@ const RegisterForm = () => {
                         required
                     />
                 </div>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-x-6">
                     {/* Country */}
                     <div className="mb-4">
                         <label
@@ -195,6 +280,38 @@ const RegisterForm = () => {
                             required
                         />
                     </div>
+                    {/* City */}
+                    <div className="mb-4">
+                        <label
+                            htmlFor="district"
+                            className="block mb-2 text-sm font-medium text-gray-900"
+                        >
+                            District
+                        </label>
+                        <input
+                            type="text"
+                            id="district"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                    </div>
+                    {/* Pincode */}
+                    <div className="mb-4">
+                        <label
+                            htmlFor="tehsil"
+                            className="block mb-2 text-sm font-medium text-gray-900"
+                        >
+                            Tehsil
+                        </label>
+                        <input
+                            type="text"
+                            id="tehsil"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder=""
+                            required
+                        />
+                    </div>
                 </div>
                 <button
                     type="submit"
@@ -207,4 +324,4 @@ const RegisterForm = () => {
     );
 };
 
-export default RegisterForm;
+export default SellerRegisterForm;

@@ -65,3 +65,9 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+.text-format {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

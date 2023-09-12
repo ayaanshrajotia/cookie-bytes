@@ -1,9 +1,9 @@
-import { LoginContext } from "@/context/loginContext";
+import { LoginContext, PopupContext } from "@/context/popupContext";
 import { Filter, SortAsc, X } from "lucide-react";
 import React, { useContext } from "react";
 
 const FilterPopup = () => {
-    const { isFilterOpen, setIsFilterOpen } = useContext(LoginContext);
+    const { isFilterOpen, setIsFilterOpen } = useContext(PopupContext);
 
     return (
         <div

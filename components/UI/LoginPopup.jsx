@@ -1,15 +1,57 @@
 "use client";
 
-import { LoginContext } from "@/context/loginContext";
+import { PopupContext } from "@/context/popupContext";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 // icons
 import { X } from "lucide-react";
+import { LoginContext } from "@/context/loginContext";
+import { users } from "@/database/users";
+import { toast } from "react-hot-toast";
 
 const LoginPopup = () => {
-    const { setIsLoginOpen } = useContext(LoginContext);
+    const { setIsLoginOpen } = useContext(PopupContext);
+    const { user, setUser } = useContext(LoginContext);
+    // const [user, setUser] = useState(null);
+    const [userData, setUserData] = useState({
+        phone_number: "",
+        password: "",
+    });
+
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+        console.log(user);
+    }, [setUser]);
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const existUser = users.find(
+            (user) => user.phone_no === parseInt(userData.phone_number)
+        );
+
+        if (!existUser) {
+            console.log("User not found");
+            toast.error("User not found");
+        }
+
+        if (existUser && existUser.password !== userData.password) {
+            console.log("Invalid credentails");
+            toast.error("Invalid Credentials");
+        }
+
+        if (existUser && existUser.password === userData.password) {
+            // setUser(existUser);
+            setIsLoginOpen((prev) => !prev);
+            localStorage.setItem("user", JSON.stringify(existUser));
+            setUser(existUser);
+            toast.success("Login Succesfully");
+        }
+
+        console.log(user);
+    };
 
     return (
         <div className="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex w-[700px] shadow-lg rounded-md">
@@ -39,6 +81,12 @@ const LoginPopup = () => {
                             className="block py-2.5 px-0  w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                             placeholder=" "
                             required
+                            onChange={(e) =>
+                                setUserData({
+                                    ...userData,
+                                    phone_number: e.target.value,
+                                })
+                            }
                         />
                         <label
                             htmlFor="floating_number"
@@ -57,6 +105,12 @@ const LoginPopup = () => {
                             className="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-900 peer"
                             placeholder=" "
                             required
+                            onChange={(e) =>
+                                setUserData({
+                                    ...userData,
+                                    password: e.target.value,
+                                })
+                            }
                         />
                         <label
                             htmlFor="floating_password"
@@ -74,7 +128,9 @@ const LoginPopup = () => {
                     <button
                         type="submit"
                         className="text-white bg-gray-700 mt-4 font-medium rounded-md text-base w-full px-5 py-2 text-center"
-                        onClick={() => setIsOpen((prev) => !prev)}
+                        onClick={(e) => {
+                            handleLogin(e);
+                        }}
                     >
                         Login
                     </button>
