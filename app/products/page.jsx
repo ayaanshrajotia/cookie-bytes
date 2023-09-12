@@ -3,15 +3,33 @@
 import ProductCard from "@/components/Cards/ProductCard";
 import FilterPopup from "@/components/UI/FilterPopup";
 import LoginPopup from "@/components/UI/LoginPopup";
-import { LoginContext } from "@/context/loginContext";
+import ProductSlider2 from "@/components/UI/ProductSlider2";
+import { LoginContext, PopupContext } from "@/context/popupContext";
+import { products } from "@/database/productsList";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useContext } from "react";
 
 const ProductsPage = () => {
+    const router = useRouter();
     const { isLoginOpen, isFilterOpen, setIsFilterOpen } =
-        useContext(LoginContext);
+        useContext(PopupContext);
+
+    // const fertilizers = products.filter((product) => product.type === "fer");
+    // const insecticides = products.filter((product) => product.type === "ins");
+    // const fungicides = products.filter((product) => product.type === "fung");
+    // const herbicides = products.filter((product) => product.type === "herb");
+    // const hybridSeeds = products.filter((product) => product.type === "hyb");
+    // const pgr = products.filter((product) => product.type === "pgr");
+
+    const shop1 = products.filter((product) => product.sellerId === 1);
+    const shop2 = products.filter((product) => product.sellerId === 2);
+    const shop3 = products.filter((product) => product.sellerId === 3);
+    const shop4 = products.filter((product) => product.sellerId === 4);
+    const shop5 = products.filter((product) => product.sellerId === 5);
 
     return (
-        <div className="relative w-full h-full flex ">
+        <div className="relative w-full h-full flex">
             <div
                 className={`${
                     isLoginOpen ? "block" : "hidden"
@@ -28,46 +46,46 @@ const ProductsPage = () => {
                 <FilterPopup />
             </div>
 
-            <div className="p-4 max-w-[1200px] mx-auto pt-[80px]">
-                <h1 className="text-5xl font-poppins font-bold my-4 text-center">
-                    Fertilizers
-                </h1>
-                <div className="flex items-center justify-between">
+            <div className="p-4 max-w-[1200px] mx-auto pt-[120px]">
+                <div className="flex items-center justify-between mb-10">
                     <button
-                        className="  bg-green-900 text-white px-5 py-2 rounded-md font-poppins text-xl font-medium"
+                        className="  bg-green-900 text-white px-5 py-2 rounded-md font-poppins text-lg font-medium"
                         onClick={() => setIsFilterOpen((prev) => !prev)}
                     >
                         Filter
                     </button>
                     <button
-                        className=" bg-green-900 text-white px-5 py-2 rounded-md font-poppins text-xl font-medium"
+                        className=" bg-green-900 text-white px-5 py-2 rounded-md font-poppins text-lg font-medium"
                         onClick={() => setIsFilterOpen((prev) => !prev)}
                     >
                         Sort By
                     </button>
                 </div>
-                <div className="my-8 flex flex-wrap items-center justify-center">
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                </div>
+                <ProductSlider2
+                    title={"Krishi Upkaran Dukan"}
+                    shop={shop1}
+                    shopId={"1"}
+                />
+                <ProductSlider2
+                    title={"Khad Aur Khaad Dukaan"}
+                    shop={shop2}
+                    shopId={"2"}
+                />
+                <ProductSlider2
+                    title={"Keet-Nashak Dukaan"}
+                    shop={shop3}
+                    shopId={"3"}
+                />
+                <ProductSlider2
+                    title={"Krishi Yantra Dukaan"}
+                    shop={shop4}
+                    shopId={"4"}
+                />
+                <ProductSlider2
+                    title={"Krishi Rasayan Dukaan"}
+                    shop={shop5}
+                    shopId={"5"}
+                />
             </div>
         </div>
     );

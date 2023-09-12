@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { ContextProvider } from "@/context/loginContext";
+import { ContextProvider } from "@/context/popupContext";
+import { LoginContextProvider } from "@/context/loginContext";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
     title: "AgriConnect",
@@ -12,12 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className="bg-gray-100">
-                <ContextProvider>
-                    <Header />
-                    {children}
-                    <Footer />
-                </ContextProvider>
+            <body className="bg-[#F6F6F9]">
+                <LoginContextProvider>
+                    <ContextProvider>
+                        <Header />
+                        {children}
+                        <Footer />
+                        <Toaster />
+                    </ContextProvider>
+                </LoginContextProvider>
             </body>
         </html>
     );
