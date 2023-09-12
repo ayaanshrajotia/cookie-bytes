@@ -5,7 +5,7 @@ import { ContextProvider } from "@/context/loginContext";
 
 export const metadata = {
     title: "AgriConnect",
-    description:
+    type:
         'Introducing "AgriConnect India" - Your Virtual Farming Link Hub!',
 };
 
