@@ -65,3 +65,11 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+.aboutus {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.705), rgba(255, 255, 255, 0.700)) , url("https://kisanshop.in/cdn/shop/files/v986-bg-02d.jpg?v=1678099732");
+    background-position: center;
+    background-image:fixed; */
+    transition: all 0.2s ease-in-out;
+    
+}
