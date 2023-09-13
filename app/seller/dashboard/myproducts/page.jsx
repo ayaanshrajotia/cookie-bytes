@@ -18,23 +18,24 @@ const Page = () => {
                     <span className="text-xl font-poppins">Add</span>
                 </button>
             </div>
-            <div>{user && products
-                    .filter((product) => {
-                        return product.sellerId === user?.sellerId;
-                    })
-                    .map((product, idx) => (
-                        <SellerProductCard
-                            key={product.id}
-                            id={product.id}
-                            productName={product.productName}
-                            price={product.price}
-                            quantity={product.quantity}
-                            image={product.image}
-                            license={product.licence}
-                            sellCount={product.sellCount}
-                        />
-                    ))}
-                
+            <div>
+                {user &&
+                    products
+                        .filter((product) => {
+                            return product.sellerId === user?.sellerId;
+                        })
+                        .map((product, idx) => (
+                            <SellerProductCard
+                                key={product.id}
+                                id={product.id}
+                                productName={product.productName}
+                                price={product.price}
+                                quantity={product.quantity}
+                                image={product.image}
+                                license={product.licence}
+                                sellCount={product.sellCount}
+                            />
+                        ))}
             </div>
         </div>
     );
