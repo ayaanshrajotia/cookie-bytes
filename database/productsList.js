@@ -45,7 +45,7 @@ export const products = [
         sellCount: 22,
         lic: 752577,
         image: "/images/Insecticides/insecticides7.png",
-        selllerid: 4,
+        sellerid: 4,
     },
     {
         id: 5,
