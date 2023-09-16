@@ -13,6 +13,8 @@ export const users = [
             city: "satna",
             pincode: 485001,
         },
+        customerId:1,
+        sellerId:1
     },
     {
         name: "Aditya Majumdar",
@@ -28,6 +30,7 @@ export const users = [
             city: "anuppur",
             pincode: 451565,
         },
+        sellerId:1
     },
     {
         name: "Ayushi Kushwaha ",
@@ -43,6 +46,8 @@ export const users = [
             city: "rewa",
             pincode: 457845,
         },
+        customerId:2,
+        sellerId:2
     },
     {
         name: "Dhanshri dale",
@@ -58,6 +63,8 @@ export const users = [
             city: "chhindwara",
             pincode: 458549,
         },
+        customerId:3,
+        sellerId:3
     },
     {
         name: "Dev Tripathi",
@@ -73,6 +80,8 @@ export const users = [
             city: "satna",
             pincode: 485001,
         },
+        customerId:4,
+        sellerId:4
     },
     {
         name: "Gaurav singh",
@@ -88,6 +97,8 @@ export const users = [
             city: "indore",
             pincode: 462156,
         },
+        customerId:5,
+        sellerId:2
     },
     {
         name: "Hemadri jain",
@@ -103,6 +114,8 @@ export const users = [
             city: "vidisha",
             pincode: 262058,
         },
+        customerId:6,
+        sellerId:1
     },
     {
         name: "Manas Rajawat",
@@ -119,6 +132,8 @@ export const users = [
             city: "bhopal",
             pincode: 462016,
         },
+        customerId:7,
+        sellerId:5
     },
     {
         name: "Manshi Sahu",
@@ -134,6 +149,8 @@ export const users = [
             city: "bhopal",
             pincode: 462001,
         },
+        customerId:8,
+        sellerId:4
     },
     {
         name: "Kirti Pandey",
@@ -150,6 +167,8 @@ export const users = [
             city: "satna",
             pincode: 485001,
         },
+        customerId:8,
+        sellerId:3
     },
     {
         name: "Vedant Updhayay",
@@ -165,6 +184,8 @@ export const users = [
             city: "sagar",
             pincode: 457412,
         },
+        customerId:9,
+        sellerId:2
     },
     {
         name: "Ashish singh",
@@ -180,6 +201,8 @@ export const users = [
             city: "sehore",
             pincode: 475965,
         },
+        customerId:10,
+        sellerId:4
     },
     {
         sellerId: 1,
@@ -198,6 +221,7 @@ export const users = [
             city: "chitrakoot",
             pincode: 485334,
         },
+        sellerId:2
     },
     {
         sellerId: 2,
@@ -216,6 +240,7 @@ export const users = [
             city: "chitrakoot",
             pincode: 485334,
         },
+        sellerId:3
     },
     {
         sellerId: 3,

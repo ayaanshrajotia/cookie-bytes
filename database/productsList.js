@@ -45,7 +45,7 @@ export const products = [
         sellCount: 22,
         lic: 752577,
         image: "/images/Insecticides/insecticides7.png",
-        sellerid: 4,
+        sellerId: 4,
     },
     {
         id: 5,
@@ -997,10 +997,10 @@ export const products = [
     },
     {
         id: 9,
-        productName: "Metzin Metribuzin 70% WP",
-        price: 1590,
+        productName: "Saathi Herbicide",
+        price: 300,
         type: "herb",
-        quantity: "1KG",
+        quantity: "80G",
         productId: 625,
         sellCount: "100",
         lic: 329078,
