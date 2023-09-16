@@ -5,24 +5,28 @@ const slots=[
         slotPrice:2164,
         products:[
             {
+                id:1,
                 productName: "Everglow Insecticide",
                 price: 439,
                 type:"ins",
                 quantity: 2,
             },
             {
+                id:48,
                 productName: "Regain Fipronil 0.3% GFL",
                 price: 1200,
                 type: "ins",
                 quantity: 1,
             },
             {
+                id:15,
                 productName: "Stop Thiphanate Methyl 70% WP",
                 price: 100,
                 type: "fung",
                 quantity: 1,
             },
             {
+                id:24,
                 productName: "Trustbasket Lemongrass Hybrid Seeds",
                 price: 218,
                 type: "hyb",
@@ -39,30 +43,35 @@ const slots=[
         slotPrice:2230,
         products:[
             {
+                id:25,
                 productName: "Farmgokart Hybrid Tomato Seeds",
                 price: 100,
                 type: "hyb",
                 quantity: 3,
             },
             {
+                id:30,
                 productName: "Gujarat Hybrid Bhindi Seeds",
                 price: 100,
                 type: "hyb",
                 quantity: 3,
             },
             {
+                id:35,
                 productName: "Gibberellic Acid 0.001% Growfast",
                 price: 200,
                 type: "pgr",
                 quantity: 2,
             },
             {
+                id:78,
                 productName: "Acrona 16:16:16",
                 price: 490,
                 type: "fer",
                 quantity: 2,
             },
             {
+                id:44,
                 productName: "Imax Metribuzin 70% WP",
                 price: 50,
                 type: "herb",
@@ -79,36 +88,42 @@ const slots=[
         slotPrice:11286,
         products:[
             {
+                id:3,
                 productName: "No Ant Liquid Ant Spray",
                 price: 199,
                 type: "ins",
                 quantity: 3,
             },
             {
+                id:12,
                 productName: "DS Exzole Tebuconazole 2% DS",
                 price: 299,
                 type: "fung",
                 quantity: 4,
             },
             {
+                id:26,
                 productName: "Bioseedveg Hybrid Cauliflower Seeds",
                 price: 199,
                 type: "hyb",
                 quantity: 3,
             },
             {
+                id:93,
                 productName: "Metrigle Systemic Herbicide ",
                 price: 1300,
                 type: "herb",
                 quantity: 5,
             },
             {
+                id:79,
                 productName: "Grosur Innovative Nutrients",
                 price: 1099,
                 type: "fer",
                 quantity: 3,
             },
             {
+                id:84,
                 productName: "Chelate Trace Element Fertilizer",
                 price: 399,
                 type: "fer",
@@ -125,24 +140,21 @@ const slots=[
         slotPrice:4797,
         products:[
             {
+                id:41,
                 productName: "Saathi Herbicide",
                 price: 300,
                 type: "herb",
                 quantity: 4,
             },
             {
-                productName: "Saathi Herbicide",
-                price: 300,
-                type: "herb",
-                quantity: 2
-            },
-            {
+                id:71,
                 productName: "GreenFert Tricontanol Ew 0.1% MIN",
                 price: 599,
                 type: "pgr",
                 quantity: 3,
             },
             {
+                id:18,
                 productName: "Glow Plus Hexaconazole 5% SC",
                 price: 100,
                 type: "fung",
@@ -159,18 +171,21 @@ const slots=[
         slotPrice:4696,
         products:[
             {
+                id:52,
                 productName: "Merger Contact & Systemic Fungicide",
                 price: 1099,
                 type: "fung",
                 quantity: 2,
             },
             {
+                id:47,
                 productName: "Z+ Pride",
                 price: 799,
                 type: "ins",
                 quantity: 2,
             },
             {
+                id:23,
                 productName: "Foargen Maize Master Seeds",
                 price: 300,
                 type: "hyb.",
