@@ -3,13 +3,13 @@ import React from "react";
 const AboutUs = () => {
     return (
         <div className="aboutus mt-[80px] max-w-[1200px] mx-auto  h-3/4 relative font-poppins p-10">
-            <div className=" md:max-w-[1200px]  md:h-full   flex md:flex-col">
+            <div className=" sm:max-w-[1200px]  md:h-full   flex  min-[250px]:flex-col  ">
                 <div className="max-h-1/3">
 
                     <div className="md:basis-1/3  flex-col ">
                       <h1 className=" mt-2  font-bold font-poppins text-left text-3xl"> About Us</h1>
                       <h1 className=" my-5 font-sans text-xs sm:test-sm md:text-2xl text-left ">Welcome to Agriconnect, your digital hub for all things agriculture. </h1>
-                      <img  className=" mt-4 rounded-xl w-full h-[550px] shadow-sm shadow-black " src="/images/farmer3.jpg" alt=""/>
+                      <img  className=" mt-4 rounded-xl w-full h-[200px] sm:h-[400px] md:h-[550px] shadow-sm shadow-black hidden:sm " src="/images/farmer3.jpg" alt=""/>
                 
                     </div>
                    <div className="  md:basis-2/3  mt-12 ">
