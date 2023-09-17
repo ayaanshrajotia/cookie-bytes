@@ -26,7 +26,7 @@ const SearchBar = () => {
                     <option value="GARDENING-NNVzF">Gardening</option>
                     <option value="order-plants-online">Plant</option>
                     <option value="Nursery-R8lQk">Nursery</option>
-                    <option value="Insecticide-Ntuw9">Insecticide</option>
+                    <option value="ins-Ntuw9">ins</option>
                     <option value="Pesticide-8EylN">Pesticide</option>
                 </select>
             </div>

@@ -1,9 +1,9 @@
-import { LoginContext } from "@/context/loginContext";
+import { LoginContext, PopupContext } from "@/context/popupContext";
 import { Filter, SortAsc, X } from "lucide-react";
 import React, { useContext } from "react";
 
 const FilterPopup = () => {
-    const { isFilterOpen, setIsFilterOpen } = useContext(LoginContext);
+    const { isFilterOpen, setIsFilterOpen } = useContext(PopupContext);
 
     return (
         <div
@@ -36,7 +36,7 @@ const FilterPopup = () => {
                     <li>
                         <div className="flex gap-2 items-center">
                             <input type="checkbox" className="w-5 h-5" />
-                            <label htmlFor="">Insecticides</label>
+                            <label htmlFor="">inss</label>
                         </div>
                     </li>
                     <li>
@@ -88,7 +88,7 @@ const FilterPopup = () => {
                     <li>
                         <div className="flex gap-2 items-center">
                             <input type="checkbox" className="w-5 h-5" />
-                            <label htmlFor="">Insecticides</label>
+                            <label htmlFor="">inss</label>
                         </div>
                     </li>
                     <li>

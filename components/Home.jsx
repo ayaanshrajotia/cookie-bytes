@@ -3,7 +3,7 @@
 import ProductCard from "@/components/Cards/ProductCard";
 import EmblaCarousel from "@/components/EmblaCarousel";
 import LoginPopup from "@/components/UI/LoginPopup";
-import { LoginContext } from "@/context/loginContext";
+import { LoginContext, PopupContext } from "@/context/popupContext";
 import { useContext } from "react";
 import ProductSlider from "./UI/ProductSlider";
 import HeroSection from "./UI/HeroSection";
@@ -12,7 +12,7 @@ export default function Home() {
     const OPTIONS = {};
     const SLIDE_COUNT = 5;
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-    const { isLoginOpen } = useContext(LoginContext);
+    const { isLoginOpen } = useContext(PopupContext);
 
     return (
         <main className="relative">

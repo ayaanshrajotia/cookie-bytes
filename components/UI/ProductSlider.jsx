@@ -10,8 +10,11 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 
 import ProductCard from "../Cards/ProductCard";
+import HomeProductCard from "../Cards/HomeProduct";
+import { products } from "@/database/productsList";
 
 const ProductSlider = ({ title }) => {
+    const insecticides = products.filter((product) => product.type === "ins");
     return (
         <section className="max-w-[1200px] mx-auto ">
             <h1 className="text-4xl font-poppins font-bold mt-6">{title}</h1>
@@ -25,36 +28,18 @@ const ProductSlider = ({ title }) => {
                     modules={[Navigation]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProductCard />
-                    </SwiperSlide>
+                    {insecticides.map((insecticide, idx) => (
+                        <SwiperSlide key={idx}>
+                            <ProductCard
+                                key={insecticide.id}
+                                id={insecticide.id}
+                                productName={insecticide.productName}
+                                price={insecticide.price}
+                                quantity={insecticide.quantity}
+                                image={insecticide.image}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </section>
