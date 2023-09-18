@@ -1,11 +1,22 @@
+"use client";
+
+import { slots } from "@/database/slot";
 import React from "react";
 
-const BuyerDashboard = () => {
+const CustomerDashboard = () => {
+    const user = JSON.parse(localStorage.getItem("user"));
     return (
-        <div className="flex flex-col items-center justify-between">
-            Buyer Dashboard
+        <div className="flex w-full">
+            <div className="bg-[#F6F6F9] basis-full p-6">
+                <h1 className="text-4xl font-poppins font-bold mb-6">
+                    Dashboard
+                </h1>
+                <p className="text-2xl">
+                    Welcome, <span className="">{user.name}</span>
+                </p>
+            </div>
         </div>
     );
 };
 
-export default BuyerDashboard;
+export default CustomerDashboard;

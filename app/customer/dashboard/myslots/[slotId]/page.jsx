@@ -1,18 +1,13 @@
 "use client";
 
-import ProductCard from "@/components/Cards/ProductCard";
 import SlotProductCard from "@/components/Cards/SlotProductCard";
 import { products } from "@/database/productsList";
 import { slots } from "@/database/slot";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Countdown from "react-countdown";
-import toast from "react-hot-toast";
 
 const Page = () => {
-    const router = useRouter();
-    const [loading, setLoading] = useState(false);
     const { slotId } = useParams();
 
     const slot = slots.filter((slot) => {
@@ -44,24 +39,7 @@ const Page = () => {
                     className="font-semibold"
                 />
             </div>
-            <div className=" flex flex-col gap-4">
-                <h1 className="text-2xl">Confirm Slot</h1>
-                <div className="flex items-center gap-4">
-                    <input type="text" className="py-2 px-4 text-lg" />
-                    <button
-                        className="bg-red-600 text-white px-4 py-2"
-                        onClick={() => {
-                            setLoading(true);
-                            setTimeout(() => {
-                                toast.success("Slot Completed");
-                                router.push("/seller/dashboard/myorders");
-                            }, 2000);
-                        }}
-                    >
-                        {loading ? "Loading..." : "Check"}
-                    </button>
-                </div>
-            </div>
+           
             <div className="flex justify-between">
                 <h2 className="text-2xl">
                     Total Price:{" "}

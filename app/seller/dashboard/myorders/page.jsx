@@ -1,7 +1,18 @@
-import SlotCard from "@/components/Cards/SlotCard";
-import React from "react";
+"use client";
 
-const page = () => {
+import { slots } from "@/database/slot";
+import React, { useContext } from "react";
+import SellerProductCard from "@/components/Cards/SellerProductCard";
+import SlotProductCard from "@/components/Cards/SlotProductCard";
+import SellerSlotCard from "@/components/Cards/SellerSlotCard";
+
+const Page = () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    const sellerSlots = slots.filter((slot) => {
+        return slot.sellerId === user.sellerId;
+    });
+
     return (
         <div className="bg-[#F6F6F9] basis-full p-6 px-10">
             <h1 className="text-4xl font-poppins font-bold mb-8">My Orders</h1>
@@ -20,7 +31,16 @@ const page = () => {
                         Price
                     </h1>
                 </div>
-                <SlotCard
+                {sellerSlots.map((slot) => (
+                    <SellerSlotCard
+                        key={slot.slotId}
+                        slotid={slot.slotId}
+                        status={slot.slotStatus}
+                        date={slot.date}
+                        price={slot.slotPrice}
+                    />
+                ))}
+                {/* <SlotCard
                     slotid={12345678}
                     status={"Completed"}
                     date={"11/09/2023"}
@@ -49,10 +69,10 @@ const page = () => {
                     status={"Complted"}
                     date={"11/09/2023"}
                     price={6500}
-                />
+                /> */}
             </div>
         </div>
     );
 };
 
-export default page;
+export default Page;

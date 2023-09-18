@@ -8,13 +8,14 @@ import { LoginContext } from "@/context/loginContext";
 // icons
 import { ShoppingBag, Globe, UserCircle2 } from "lucide-react";
 import SearchBar from "./UI/SearchBar";
-import Image from "next/image";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+    const router = useRouter();
     const [show, handleShow] = useState(false);
     const { isLoginOpen, setIsLoginOpen } = useContext(PopupContext);
     const { user, setUser } = useContext(LoginContext);
-    console.log(user);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -35,7 +36,7 @@ const Header = () => {
                 window.removeEventListener("scroll", () => {});
             }
         };
-    }, []);
+    }, [setUser]);
 
     return (
         <nav
@@ -132,6 +133,8 @@ const Header = () => {
                                 onClick={() => {
                                     setUser((prev) => !prev);
                                     localStorage.removeItem("user");
+                                    toast.success("Logout successfully");
+                                    router.push("/");
                                 }}
                             >
                                 Logout

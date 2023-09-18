@@ -1,8 +1,10 @@
+"use client";
+
 import { Star } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const ProductCard = ({ id, productName, price, quantity, image }) => {
+const SlotProductCard = ({ id, productName, price, quantity, image }) => {
     const router = useRouter();
     return (
         <div
@@ -45,6 +47,9 @@ const ProductCard = ({ id, productName, price, quantity, image }) => {
                         5.0
                     </span>
                 </div>
+                <div>
+                    <span>{Math.floor(Math.random() * 200)}</span>
+                </div>
                 <div class="flex items-center justify-between">
                     <span class="text-2xl font-bold text-gray-900 mb-4">
                         ₹{price}
@@ -61,4 +66,4 @@ const ProductCard = ({ id, productName, price, quantity, image }) => {
     );
 };
 
-export default ProductCard;
+export default SlotProductCard;

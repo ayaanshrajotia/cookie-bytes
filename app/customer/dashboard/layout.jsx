@@ -14,14 +14,17 @@ const layout = ({ children }) => {
             <div className="bg-white basis-[20%] p-8  border-r-[1px] border-gray-300">
                 <ul className="font-poppins flex flex-col gap-6">
                     <li className=" cursor-pointer">
-                        <Link href={"/seller/dashboard"} className="flex gap-4">
+                        <Link
+                            href={"/customer/dashboard"}
+                            className="flex gap-4"
+                        >
                             <LayoutDashboard />
                             Dashboard
                         </Link>
                     </li>
                     <li className=" cursor-pointer">
                         <Link
-                            href={"/seller/dashboard/myorders"}
+                            href={"/customer/dashboard/myorders"}
                             className="flex gap-4"
                         >
                             <FileText />
@@ -30,25 +33,16 @@ const layout = ({ children }) => {
                     </li>
                     <li className="flex gap-4 cursor-pointer">
                         <Link
-                            href={"/seller/dashboard/myproducts"}
+                            href={"/customer/dashboard/myslots"}
                             className="flex gap-4"
                         >
                             <ShoppingCart />
-                            My Products
+                            My Slots
                         </Link>
                     </li>
                     <li className="flex gap-4 cursor-pointer">
                         <Link
-                            href={"/seller/dashboard/mysales"}
-                            className="flex gap-4"
-                        >
-                            <BarChart4 />
-                            My Sales
-                        </Link>
-                    </li>
-                    <li className="flex gap-4 cursor-pointer">
-                        <Link
-                            href={"/seller/dashboard/settings"}
+                            href={"/customer/dashboard/settings"}
                             className="flex gap-4"
                         >
                             <Settings />

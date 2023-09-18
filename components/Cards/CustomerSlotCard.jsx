@@ -2,12 +2,12 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const SlotCard = ({ slotid, status, date, price }) => {
+const CustomerSlotCard = ({ slotid, status, date, price }) => {
     const router = useRouter();
     return (
         <div
             className=" w-full rounded-md p-2 my-4 cursor-pointer hover:scale-[1.01] transition-all"
-            onClick={() => router.push(`/seller/dashboard/myorders/` + slotid)}
+            onClick={() => router.push(`/customer/dashboard/myslots/` + slotid)}
         >
             <div className="flex items-center justify-between font-poppins text-lg">
                 <div className="">#{slotid}</div>
@@ -23,4 +23,4 @@ const SlotCard = ({ slotid, status, date, price }) => {
     );
 };
 
-export default SlotCard;
+export default CustomerSlotCard;

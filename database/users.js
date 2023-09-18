@@ -1,5 +1,6 @@
 export const users = [
     {
+        customerId: 1,
         name: "Aditya Mishra",
         email: "Mishra.adi66@gmail.com",
         password: "12345678",
@@ -15,6 +16,7 @@ export const users = [
         },
     },
     {
+        customerId: 2,
         name: "Aditya Majumdar",
         email: "adimajum45@gmail.com",
         password: "12345678",

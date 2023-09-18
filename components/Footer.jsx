@@ -104,8 +104,8 @@ const Footer = () => {
                                 className="py-2 px-3 bg-gray-900 text-white rounded-lg focus:outline-none"
                             />
                             <input
-                                type="email"
-                                placeholder="Your email"
+                                type="text"
+                                placeholder="Your Phone Number"
                                 className="py-2 px-3 bg-gray-900 text-white rounded-lg focus:outline-none"
                             />
                             <button className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg">
