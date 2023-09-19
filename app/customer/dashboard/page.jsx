@@ -1,10 +1,14 @@
 "use client";
 
 import { slots } from "@/database/slot";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const CustomerDashboard = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+    }, []);
     return (
         <div className="flex w-full">
             <div className="bg-[#F6F6F9] basis-full p-6">

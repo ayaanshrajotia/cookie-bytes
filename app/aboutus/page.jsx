@@ -43,7 +43,7 @@ const AboutUs = () => {
                             sustainable, profitable, and accessible to all.
                             Agriconnect is our contribution to this vision, and
                             we invite you to be a part of this exciting journey.
-                            Whether you're a farmer, a gardener, an agricultural
+                            Whether you&apos;re a farmer, a gardener, an agricultural
                             student, or someone who simply appreciates the
                             importance of agriculture, Agriconnect is your
                             platform to connect, learn, and grow. Join our

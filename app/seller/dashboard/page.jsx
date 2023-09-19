@@ -1,7 +1,7 @@
 "use client";
 
 import { slots } from "@/database/slot";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const SellerDashboard = () => {
     const sum = slots.reduce(
@@ -9,7 +9,11 @@ const SellerDashboard = () => {
         0
     );
 
-    const user = JSON.parse(localStorage.getItem("user"));
+    const [user, setUser] = useState('')
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+    }, []);
 
     const sellerSlots = slots.filter((slot) => {
         return slot.sellerId === user.sellerId;
@@ -38,7 +42,7 @@ const SellerDashboard = () => {
                             Total Products
                         </h1>
                         <span className="text-4xl font-semibold">
-                            {sellerSlots[0].products.length}
+                            {sellerSlots[0]?.products?.length}
                         </span>
                     </div>
                 </div>

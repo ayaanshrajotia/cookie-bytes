@@ -1,13 +1,17 @@
 "use client";
 
 import { slots } from "@/database/slot";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import SellerProductCard from "@/components/Cards/SellerProductCard";
 import SlotProductCard from "@/components/Cards/SlotProductCard";
 import SellerSlotCard from "@/components/Cards/SellerSlotCard";
 
 const Page = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+    }, []);
 
     const sellerSlots = slots.filter((slot) => {
         return slot.sellerId === user.sellerId;

@@ -2,10 +2,14 @@
 
 import CustomerSlotCard from "@/components/Cards/CustomerSlotCard";
 import { slots } from "@/database/slot";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+    }, []);
 
     const customerSlots = slots.filter((slot) => {
         return slot.customerId === user.customerId;
