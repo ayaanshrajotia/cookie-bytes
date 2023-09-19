@@ -3,10 +3,14 @@
 import SlotCard from "@/components/Cards/SellerSlotCard";
 import { LoginContext } from "@/context/loginContext";
 import { slots } from "@/database/slot";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 const Page = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        setUser(user);
+    }, []);
 
     const sellerSlots = slots.filter((slot) => {
         return slot.customerId === user.customerId;
